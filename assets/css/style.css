@@ -1,0 +1,472 @@
+/*
+	Web Development - Final Project
+    Group One: Mamdoh Zeyad - Barra Arnoos - Ahmed sabagh 
+*/
+
+/* Start Root */
+:root{
+	
+	--main-color: #2d652f;
+	--header-color:#636362;
+	--hover-color: #D2A260;
+
+	--header-background-color: ghostwhite;
+	--background-color-gray: dimgray;
+
+	--header-footer-size: 19px;
+	--text-family: monospace;
+	
+	--box-shadw: 0px 4px 6px 0px #0c002e0f;
+	--border-radius: 10px;
+	--section-margin: 0 250px 100px 250px;
+}
+/* End Root */
+
+/* Start Global Rules */
+body, html{
+	height: 100%;
+	margin: 0px;
+}
+
+#wrapper{
+	position: relative;
+	min-height:100%;
+	background-color: #fbfbfb;
+}
+
+#container{
+	margin: 0 auto;
+	min-height: 100%;
+	width: 100%;
+	padding-bottom:  40px;
+	font-family: var(--text-family);
+	background-color: var(--header-background-color);
+}
+
+.head-text1{
+	color: var(--main-color);
+	font-size: 25px;
+}
+.head-text2{
+	color: var(--hover-color);
+	font-size: 17px;
+}
+.body-text{
+	font-size: 13px;
+	line-height: 1.6;
+}
+
+::selection{
+	background-color: silver;
+}
+
+@media print{
+	.header, .footer, .landing, .main-btn, .mapouter, .feedback{
+		display: none;
+	}
+}
+/* End Global Rules */
+
+/* Start Header */
+#container .header{
+	background-color: white;
+    box-shadow: var(--box-shadw);
+	text-align: center;
+    width: 100%;
+}
+
+#container .header ul{
+	list-style: none;
+	margin: 0;
+	padding: 10px 0 15px 0;
+	margin-bottom: 30px;
+}
+
+#container .header ul li { 
+	display: inline-block;
+	padding: 0 20px 0 20px;
+}
+
+@media(max-width:765px){
+	#container .header ul li { 
+		padding: 0 1px 0 1px;
+	}
+}
+
+#container .header ul li img{ 
+	width: 75px;
+	margin-bottom: -15px;
+}
+
+.header ul a{
+	text-decoration: none;
+	color: var(--header-color);
+	font-size: var(--header-footer-size);
+	padding: 16px;
+}
+
+@media(max-width:765px){
+	.header ul a{
+		font-size: 15px;
+		padding: 8px;
+	}
+}
+
+.header ul a:hover{
+	color: #D2A260;
+	transition: 0.3s;
+}
+/* End Header */
+
+/* Start Landing */
+.landing .container img{
+	width: 100%;
+}
+/* End Landing */
+
+/* Start index*/
+.section-header{
+	font-size: 40px;
+	color: var(--main-color);
+	text-align: center;
+}
+
+.content-section{
+	box-shadow: var(--box-shadw);
+	border-radius: var(--border-radius);
+	margin: var(--section-margin);
+	padding: 70px;
+	background-color: white;
+	text-align: justify;
+}
+
+@media(max-width:765px){
+	.content-section{
+		margin-right: 140px;
+		margin-left: 40px;
+		text-align: center;
+		padding: 20px;
+		
+	}
+}
+
+@media(max-width:1000px){
+	.content-section{
+		margin-right: 40px;
+		margin-left: 40px;
+
+	}
+}
+
+.content-container .body-text span{
+	color: var(--hover-color);
+}
+
+.main-btn {
+	text-decoration: none;
+	box-shadow: 0px 20px 30px 0px rgb(0 46 24 / 10%);
+    background-color: var(--main-color);
+    padding: 18px 40px;
+	display: block;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 45px;
+    border: 1px solid var(--main-color);
+	float: right;
+	cursor: pointer;
+}
+
+@media(max-width:765px){
+	.main-btn {
+		padding: 15px 15px;
+		float: none;
+		margin: auto;
+	}
+}
+
+.main-btn:hover{
+	background-color: #fbfbfb;
+	color: var(--hover-color);
+}
+/* End index */
+
+/* Start Ahmad - about */
+.content-section-about{
+	box-shadow: var(--box-shadw);	
+	border-radius: var(--border-radius);
+	margin-bottom: 20px;
+	background-color: var(--header-background-color);
+	text-align: justify;
+	padding: 20px;
+}
+
+.Objectives-nav .Objectives-ul li {
+	padding-bottom: 10px;
+	margin-top: 10px;
+	list-style: circle;
+}
+/* End Ahmad - about */
+
+/* Start Barra - contact*/
+.content-container-contact{
+	text-align: center;
+}
+
+.multi-columns{
+	border-bottom: 1px dashed dimgray;
+    padding-bottom: 50px;
+}
+
+.card-style{
+	width: 25%;
+	display: inline-block;
+    background-color: var(--header-background-color);
+    box-shadow: var(--box-shadw);
+    padding: 30px;
+	margin: 0 5px 0 5px; 
+
+}
+
+@media(max-width: 1555px){
+	.card-style{
+		width: 75%;
+		margin: 10px 0 10px 0; 
+	}
+}
+
+.main-btn-contact {
+	text-decoration: none;
+	box-shadow: 0px 20px 30px 0px rgb(0 46 24 / 10%);
+    background-color: var(--main-color);
+    padding: 18px 40px;
+	display: block;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 45px;
+    border: 1px solid #2D652F;
+	cursor: pointer;
+}
+
+.main-btn-contact:hover{
+	background-color: #fbfbfb;
+	color: var(--hover-color);
+}
+
+.mapouter{
+	margin-top: 30px;
+	border-bottom: 1px dashed dimgray;
+    padding-bottom: 50px;
+	text-align: center;
+}
+.gmap_canvas {
+    display: inline-block;
+	margin: 0 30px 0 30px;
+}
+.map-frame{
+	border-radius: 10px;
+    box-shadow: var(--box-shadw);
+    display: inline-block;
+    width: 100%;
+    margin-right: 70px;
+}
+
+.map-header{
+	text-align: left;
+	font-size: 15px;
+}
+
+.feedback{
+	margin-top: 30px;
+	text-align: center;
+	color: red;
+}
+
+.form-control {
+	margin: auto;
+    display: block;
+    width: 71%;
+    padding: 6px 6px;
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--header-color);
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid dimgray;
+    border-radius: 10px;
+}
+
+.form-control:focus{
+	outline: none !important;
+    border-color: var(--hover-color);
+}
+
+.form-label{
+	margin: auto;
+    display: block;
+    width: 70%;
+    padding: 6px 6px;
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--header-color);
+    background-color: #fff;
+    background-clip: padding-box;
+	text-align: left;
+}
+
+.feedback-container span{
+	color: red;
+}
+
+.btn-primary {
+    color: white;
+    background: var(--main-color);
+	margin-top: 20px;
+    border-radius: var(--border-radius);
+    padding: 16px 38px;
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+	background-color: white;
+	color: var(--hover-color);
+}
+/* End Barra - contact*/
+
+/* Start booking */
+.content-section-book{
+	box-shadow: var(--box-shadw);	
+	border-radius: var(--border-radius);
+	margin-bottom: 20px;
+	background-color: var(--header-background-color);
+	text-align: justify;
+	padding: 20px;
+	margin: auto;
+	width: 70%;
+}
+
+.customer-information{
+	border-bottom: 1px dashed dimgray;
+	padding-bottom: 30px;
+}
+
+.Booking-all .form-label-gender {
+	width: 21%;
+	display: inline;
+}
+
+.date .form-control-date {
+	width: 21%;
+	margin: auto;
+    display: inline-block;
+    padding: 6px 7px;
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--header-color);
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid dimgray;
+    border-radius: 10px;
+}
+
+.airline-info{
+	border-bottom: 1px dashed dimgray;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.booking-type{
+	border: 1px solid dimgray;
+    width: 73%;
+    margin: auto;
+    border-radius: var(--border-radius);
+    font-size: 15px;
+	padding: 8px 0 8px 0;
+}
+
+.head-text-radio{
+	display: inline-block;
+    font-size: 20px;
+    color: black;
+	font-weight: normal;
+}
+
+#icon-style1{
+	margin-right: 10px;
+}
+
+#icon-style2{
+	margin-right: 10px;
+}
+
+.upload-container{
+	margin-top: 30px;
+}
+
+.upload-button{
+	background-color: var(--main-color);
+	color: white;
+	padding: 10px;
+	border-radius: var(--border-radius);
+	cursor: pointer;
+	margin-top: 10px;
+	border: 1px solid var(--main-color);
+}
+
+.upload-button:hover{
+	color: var(--hover-color);
+	background-color: white;
+}
+
+#file-chosen{
+	margin-left: 10px;
+}
+/*End Booking*/
+
+/* Start Footer */
+.footer{
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	box-shadow: var(--box-shadw);
+	font-family: var(--text-family);
+	font-size: 15px;
+	margin-top: 50px;
+}
+
+@media(max-width:765px){
+	.footer{
+		font-size: 12px;
+	}
+}
+
+.footer p span{
+	font-weight: bold;
+	color: var(--main-color);
+}
+
+.footer .social-icons{
+    padding-bottom: 5px;
+}
+
+.footer .social-icons p{
+	display: inline-block;
+}
+
+.footer .social-icons a{
+	text-decoration: none;
+	color: var(--header-color);
+	font-size: 15px;
+	padding: 5px;
+}
+
+.footer .social-icons a #twitter{color: #55acee;}
+.footer .social-icons a #facebook{color: #3b5998;}
+.footer .social-icons a #youtube{color: #d22215;}
+/* End Footer */
+
+
+
+

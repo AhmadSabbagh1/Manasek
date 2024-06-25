@@ -1,0 +1,211 @@
+5<!-- 
+    Web Development - Final Project
+    Group One: Mamdoh Zeyad - Barra Arnoos - Ahmed sabagh 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--keywords meta-->
+    <meta name="keywords" content="Umrah, Umrah visa, Hajj visa, visit visa, tourist visa, 
+    tourist visa, permit, Umrah, Hajj, visit, perform Umrah, pray in the Holy Mosque, 
+    circumambulate, Al-Rawdah, visit the Prophet, permits, transportation services, 
+    Keddi parking, parking Jamarat, internal pilgrims, external pilgrims, external pilgrims, 
+    internal pilgrims company, external agent, Umrah company">
+
+    <!--description meta-->
+    <meta name="description" content="That the journey of Hajj, Umrah and visit be legalized, 
+    easy and smooth in an atmosphere of tranquility and tranquility, 
+    so that it remains a special and wonderful memory in the memory of the pilgrim, 
+    the pilgrim and the visitor that achieves his satisfaction and makes him an ambassador 
+    who conveys to the world the Kingdoms efforts in serving the guests of the Most Merciful.">
+    
+    <title>Manasek - Book</title>
+
+    <!--Link css cheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://kit.fontawesome.com/6ace9b8128.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="container">
+
+            <!--Start Header-->
+            <div class="header">
+                <nav>
+                    <ul>
+                        <li><a  href="index.html">Home</a></li>
+                        <li><a href="about_us.html">About</a></li>
+                        <li><img src="assets/images/Manasek.png" alt=""></li>                        
+                        <li><a href="booking.html">Book</a></li>
+                        <li><a href="contact_us.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--End Header-->
+            
+            <!-- Start Section1 -->
+            <div class="section-header">
+                <p class="">Booking</p>
+            </div>
+            <div class="content-section">
+                <div class="content-container">
+                    <div class="content-section-book">
+                        <div class="content-container-book">
+                            <p class="head-text1"> <i class="fa-solid fa-check"></i> Why Should You choose Manasek?</p>
+                            <p class="body-text">Manasek Company provides all the requirements necessary to perform the Hajj and Umrah rituals, 
+                                starting from low-cost flights to the most luxurious hotels at all prices, 
+                                without the need for the pilgrim or the pilgrim to suffer and search for the best hotels at great prices. 
+                                In addition to that, Manasek will carry out all government transactions related to your travel, 
+                                whether through authorized personnel from Manasek Company who will perform this role.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <div class="feedback-container">
+                            <form method="post" action="assets/controllers/booking.php" id='myform' name='myform'>
+                                <div class="customer-information">
+                                    <p class="head-text1"> <i id="icon-style1" class="fa-solid fa-circle-info"></i>Your Personal Inforamtion: </p>
+                                    <p class="form-label"><span>*</span>Booking Type: </p>
+                                    <div class="booking-type" >
+                                        <input class="form-control-radio" type="radio" name="type" id="hajj" value="hajj">
+                                        <label class="form-label-radio" for="name">Hajj</label>
+    
+                                        <input class="form-control-radio" type="radio" name="type" id="umrah" value="Umrah" checked>
+                                        <label class="form-label-radio" for="name">Umrah </label>
+                                    </div>
+
+                                    <label class="form-label" for="name"><span>*</span>Name: </label>
+                                    <input class="form-control" type="text" name="name" id="name" 
+                                    autofocus placeholder="Your name" pattern="[a-z]+*[A-Z]+" maxlength="50">
+
+                                    <p class="form-label"><span>*</span>Gender: </p>
+                                    <div class="booking-type">
+                                        <input class="form-control-gender" type="radio" name="gender" id="male" value="Male" checked>
+                                        <label class="form-label-gender" for="name">Male</label>
+                                        
+                                        <input class="form-control-gender" type="radio" name="gender" id="female" value="Female">
+                                        <label class="form-label-gender" for="name">Female </label>
+                                    </div>
+
+                                    <div class="date">
+                                        <label class="form-label" for="Dateofbirth-month"><span>*</span>Date of birth: </label>
+                                        <input class="form-control-date" type="number" name="Dateofbirth-month" 
+                                        id="Dateofbirth-month" placeholder="Month" min="1" max="12">
+
+                                        <input class="form-control-date" type="number" name="Dateofbirth-day" 
+                                        id="Dateofbirth-day" placeholder="Day" min="1" max="31">
+                                        <input class="form-control-date" type="number" name="Dateofbirth-year" 
+                                        id="Dateofbirth-year" placeholder="year" min="1900" max="2022">
+                                    </div>
+
+                                    <label class="form-label" for="Nationality"><span>*</span>Nationality: </label>
+                                    <input class="form-control" type="text" name="Nationality" id="Nationality" placeholder="your country" pattern="[a-z]+*[A-Z]+" maxlength="50">
+    
+                                    <label class="form-label" for="passport"><span>*</span>Passport Number: </label>
+                                    <input class="form-control" type="text" name="passport" id="passport" placeholder="Your Passport Number" maxlength="10">
+
+                                    <div class="date">    
+                                        <label class="form-label" for="Address-country"><span>*</span>Your Address:</label>
+                                        <input class="form-control-date" type="text" name="Address-country" id="Address-country"  placeholder="Country" maxlength="20">
+                                        <input class="form-control-date" type="text" name="Address-city" id="Address-city"  placeholder="City" maxlength="20">
+                                        <input class="form-control-date" type="text" name="Address-street" id="Address-street"  placeholder="Street" maxlength="20">
+                                    </div>
+
+                                    <label class="form-label" for="phone"><span>*</span>Phone Number: </label>
+                                    <input class="form-control" type="tel" name="phone" id="phone" 
+                                    pattern="[0-9]+" placeholder="only numbers" maxlength="14">
+
+                                    <label class="form-label" for="email"><span>*</span>Email: </label>
+                                    <input class="form-control" type="email" name="email" 
+                                    id="email" placeholder="example@domain.com">       
+                                </div>
+                                <div class="airline-info">
+                                    <p class="head-text1"> <i id="icon-style2" class="fa-solid fa-plane"></i>Trip Inforamtion: </p>
+                                    <p class="form-label"><span>*</span>Airline Type: </p>
+                                    <div class="booking-type">                                        
+                                        <input class="form-control-gender" type="radio" name="airline-type" id="Economic" value="Economic">
+                                        <label class="form-label-gender" for="name">Economic</label>
+
+                                        <input class="form-control-gender" type="radio" name="airline-type" id="VIP" value="VIP" checked>
+                                        <label class="form-label-gender" for="name">VIP</label>
+                                    </div>
+
+                                    <div class="date">    
+                                        <label class="form-label" for="arrival-date-month"><span>*</span>Arrival Date: </label>
+                                        <input class="form-control-date" type="number" name="arrival-date-month" id="arrival-date-month"  placeholder="Month" min="1" max="12">
+                                        <input class="form-control-date" type="number" name="arrival-date-day" id="arrival-date-day"  placeholder="Day" min="1" max="31">
+                                        <input class="form-control-date" type="number" name="arrival-date-year" id="arrival-date-year"  placeholder="year" min="2022" max="2024">
+
+                                        <label class="form-label" for="departure-date-month"><span>*</span>Departure Date: </label>
+                                        <input class="form-control-date" type="number" name="departure-date-month" id="departure-date-month"  placeholder="Month" min="1" max="12">
+                                        <input class="form-control-date" type="number" name="departure-date-day" id="departure-date-day"  placeholder="Day" min="1" max="31">
+                                        <input class="form-control-date" type="number" name="departure-date-year" id="departure-date-year"  placeholder="year" min="2022" max="2024">
+                                    </div>
+                                
+                                    <label class="form-label" for="persons"><span>*</span>Number of persons: </label>
+                                    <input class="form-control" type="number" name="persons" id="persons" placeholder="Number of persons" min="1" max="10">
+
+                                    <p class="form-label"><span>*</span>Hotel Type: </p>
+                                    <div class="booking-type">                                        
+                                        <input class="form-control-gender" type="radio" name="hotel-type" id="7_Stars" value="7 Stars" checked>
+                                        <label class="form-label-gender" for="7_Stars">7 Stars</label>
+
+                                        <input class="form-control-gender" type="radio" name="hotel-type" id="5_Stars" value="5 Stars">
+                                        <label class="form-label-gender" for="5_Stars">5 Stars</label>
+
+                                        <input class="form-control-gender" type="radio" name="hotel-type" id="3_Stars" value="3 Stars">
+                                        <label class="form-label-gender" for="3_Stars">3 Stars</label>
+                                    </div>
+
+                                    <p class="form-label"><span>*</span>Transportation Type: </p>
+                                    <div class="booking-type">                                        
+                                        <input class="form-control-gender" type="radio" name="transportation-type" id="bus" value="Bus" >
+                                        <label class="form-label-gender" for="bus">Bus</label>
+
+                                        <input class="form-control-gender" type="radio" name="transportation-type" id="taxi" value="Taxi">
+                                        <label class="form-label-gender" for="taxi">Taxi</label>
+
+                                        <input class="form-control-gender" type="radio" name="transportation-type" id="special_drivar" value="special_drivar" checked>
+                                        <label class="form-label-gender" for="special_drivar">Special Drivar</label>
+                                    </div>
+                                    <div class="upload-container">
+                                        <input type="file" name="myfile" id="myfile" hidden>
+                                        <label class="upload-button" for="myfile">Upload Your Passport</label>
+                                        <span id="file-chosen">No file chosen</span>
+                                    </div>
+                                </div>
+
+                                <p id='msg'></p>
+
+                                <input class="btn-primary" type="submit" value="Send">
+                                <input class="btn-primary" type="reset" value="Reset">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Section1 -->
+
+            <!--Start Footer-->
+            <div class="footer">
+                    <p>&copy; 2022 Manasek <span>Group One</span>  - All Rights Reserved</p>
+                    <div class="social-icons">
+                        <p>Follow Us On: </p>
+                        <a href="https://twitter.com"><i id="twitter" class="fa-brands fa-twitter"></i></a>
+                        <a href="https://facebook.com/"><i id="facebook" class="fa-brands fa-facebook"></i></a>
+                        <a href="https://youtube.com/"><i id="youtube" class="fa-brands fa-youtube"></i></a>
+                    </div>
+            </div>
+            <!--End Footer-->
+        </div>
+    </div>
+
+   <script src="assets/js/booking.js"></script> 
+</body>
+
+</html>

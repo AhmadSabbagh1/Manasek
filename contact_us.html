@@ -1,0 +1,142 @@
+<!-- 
+    Web Development - Final Project
+    Group One: Mamdoh Zeyad - Barra Arnoos - Ahmed sabagh 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--keywords meta-->
+    <meta name="keywords" content="Umrah, Umrah visa, Hajj visa, visit visa, tourist visa, 
+    tourist visa, permit, Umrah, Hajj, visit, perform Umrah, pray in the Holy Mosque, 
+    circumambulate, Al-Rawdah, visit the Prophet, permits, transportation services, 
+    Keddi parking, parking Jamarat, internal pilgrims, external pilgrims, external pilgrims, 
+    internal pilgrims company, external agent, Umrah company">
+
+    <!--description meta-->
+    <meta name="description" content="That the journey of Hajj, Umrah and visit be legalized, 
+    easy and smooth in an atmosphere of tranquility and tranquility, 
+    so that it remains a special and wonderful memory in the memory of the pilgrim, 
+    the pilgrim and the visitor that achieves his satisfaction and makes him an ambassador 
+    who conveys to the world the Kingdoms efforts in serving the guests of the Most Merciful.">
+    
+    <title>Manasek - Contact</title>
+
+    <!--Link css cheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://kit.fontawesome.com/6ace9b8128.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="container">
+            
+            <!--Start Header-->
+            <div class="header">
+                <nav>
+                    <ul>
+                        <li><a  href="index.html">Home</a></li>
+                        <li><a href="about_us.html">About</a></li>
+                        <li><img src="assets/images/Manasek.png" alt=""></li>
+                        <li><a href="booking.html">Book</a></li>
+                        <li><a href="contact_us.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--End Header-->
+
+            <!-- Start Section1 -->
+            <div class="section-header">
+                <p>Contact Us</p>
+            </div>
+            <div class="content-section">
+                <div class="content-container-contact">
+                    <div class="multi-columns">
+                        <div class="card-style">
+                            <p class="head-text1">Mamdoh Zeyad <br> <span class="head-text2">Softwaer Engineer</span> </p>
+                            <p>Mamdoh Zeyad is a software engineer currently studying at the University of Jeddah in his third year.
+                                Mamdoh specializes in web development using HTML CSS JS for the FrontEnd and using Java and Oracle Database for the backend.</p>
+                            <a class="main-btn-contact" href="mailto:2043044@uj.edu.sa">Contact Me</a>
+                        </div>
+                        <div class="card-style">
+                            <p class="head-text1">Baraa Arnoos <br> <span class="head-text2">Softwaer Engineer</span> </p>
+                            <p>Baraa Arnoos is a software engineer currently studying at the University of Jeddah in his third year. 
+                                Baraa specializes in mobile app development using flutter technology which was created by google and it is a multi platformed.</p>
+                            <a class="main-btn-contact" href="mailto:2043042@uj.edu.sa">Contact Me</a>
+                        </div>
+                        <div class="card-style">
+                            <p class="head-text1">Ahmed Sabbagh <br> <span class="head-text2">Softwaer Engineer</span> </p>
+                            <p>I am Ahmad Sabbagh a student at University of Jeddah My major is Software Engineering, I have the skill of the Frontend developer
+                                I also have previous knowledge. I am good at working within a team and caring about everyone's. </p>
+                            <a class="main-btn-contact" href="mailto:2043048@uj.edu.sa">Contact Me</a>
+                        </div>
+                    </div>
+                    <div class="mapouter">
+                        <p class="head-text1">Locations</p>
+                        <div class="gmap_canvas">
+                            <p class="map-header">Makkah - Alharam</p>
+                            <iframe class="map-frame" 
+                                src="https://maps.google.com/maps?q=makkah&t=&z=13&ie=UTF8&iwloc=&output=embed">
+                            </iframe>
+                        </div>
+                        <div class="gmap_canvas">
+                            <p class="map-header">jeddah - UOJ</p>
+                            <iframe class="map-frame"   
+                                src="https://maps.google.com/maps?q=jeddah&t=&z=13&ie=UTF8&iwloc=&output=embed" >
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <div class="feedback-container">
+                            <!--   -->
+                            <form method="post" id='myform' name='myform' action="assets/controllers/contact_us.php">
+                                <label class="form-label" for="name"><span>*</span>Name: </label>
+                                <input class="form-control" type="text" name="name" id="name" 
+                                placeholder="Your name" maxlength="30"  pattern="[a-z]+*[A-Z]+">
+
+                                <label class="form-label" for="email"><span>*</span>Email: </label>
+                                <input class="form-control" type="text" name="email" id="email" 
+                                 placeholder="example@domain.com">
+                            
+                                <label class="form-label" for="phone"><span>*</span>Phone Number: </label>
+                                <input class="form-control" type="text" name="phone" id="phone"
+                                placeholder="only numbers" maxlength="10">
+                            
+                                <label class="form-label" for="message"><span>*</span>Your Message: </label>
+                                <textarea class="form-control" name="message" id="message" cols="30" rows="10" maxlength="250"
+                                placeholder="your suggestion, No More Than 250 Latter" ></textarea>
+
+                                <p id='msg'></p>
+                            
+                                <input class="btn-primary" type="submit" value="Send">
+                                <input class="btn-primary" type="reset" value="Reset">
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- End Section1 -->
+
+            <!--Start Footer-->
+            <div class="footer">
+                    <p>&copy; 2022 Manasek <span>Group One</span>  - All Rights Reserved</p>
+                    <div class="social-icons">
+                        <p>Follow Us On: </p>
+                        <a href="https://twitter.com"><i id="twitter" class="fa-brands fa-twitter"></i></a>
+                        <a href="https://facebook.com/"><i id="facebook" class="fa-brands fa-facebook"></i></a>
+                        <a href="https://youtube.com/"><i id="youtube" class="fa-brands fa-youtube"></i></a>
+                    </div>
+            </div>
+            <!--End Footer-->
+        </div>
+    </div>
+
+    <script src="assets/js/contact.js"></script> 
+</body>
+</html>
